@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Meme Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Video Meme Generator</h1>
+    </header>
+
+    <main>
+        <section id="video-upload">
+            <h2>Upload Video</h2>
+            <input type="file" id="video-file" accept="video/*">
+        </section>
+
+        <section id="segment-select">
+            <h2>Select Segment</h2>
+            <label for="start-time">Start Time:</label>
+            <input type="number" id="start-time" min="0">
+            <label for="end-time">End Time:</label>
+            <input type="number" id="end-time" min="0">
+            <button id="crop-button">Crop Segment</button>
+        </section>
+
+        <section id="caption-text">
+            <h2>Add Caption</h2>
+            <input type="text" id="caption-input" placeholder="Enter caption here">
+            <button id="add-caption-button">Add Caption</button>
+        </section>
+
+        <section id="effect-select">
+            <h2>Apply Effects</h2>
+            <select id="effect-dropdown">
+                <option value="none">None</option>
+                <option value="bw">Black and White</option>
+                <option value="sepia">Sepia</option>
+                <option value="pixelate">Pixelate</option>
+            </select>
+            <button id="apply-effect-button">Apply Effect</button>
+        </section>
+
+        <section id="export-button">
+            <h2>Export and Share</h2>
+            <button id="export-meme-button">Export Meme</button>
+        </section>
+
+        <section id="template-library">
+            <h2>Meme Templates</h2>
+            <div id="template-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2022 Video Meme Generator</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

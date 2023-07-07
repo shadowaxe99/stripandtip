@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#video-upload {
+    display: block;
+    margin: 20px 0;
+}
+
+#segment-select {
+    display: block;
+    margin: 20px 0;
+}
+
+#caption-text {
+    display: block;
+    margin: 20px 0;
+}
+
+#effect-select {
+    display: block;
+    margin: 20px 0;
+}
+
+#export-button {
+    display: block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+#template-library {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.template {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    .template {
+        width: 100%;
+    }
+}
